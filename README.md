@@ -1,6 +1,8 @@
 # CGST_clock
 デレステUI風時計です。  
 秒表示は2進数のバーになっています。  
+[こんな感じの表示です。](https://uzuky.github.io/CGST_clock/clock.html)
+
 ## OBSでの使い方  
 - ソース追加で『ブラウザ』を選びます。  
 ![](/readme_img/source.png)  
@@ -41,7 +43,8 @@ URL: `https://uzuky.github.io/CGST_clock/clock.html`
 
 
 # 使用例  
-https://twitch.tv/uzuky を適当に見て  
+[https://twitch.tv/uzuky](https://twitch.tv/uzuky) を適当に見て  
+(自分用のはフォントをいじったりしています)  
 
 
 # ライセンス  
