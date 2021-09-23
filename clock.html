@@ -51,7 +51,7 @@
     </div>
 
     <div id="sec">
-    <canvas id="secCanvas" width="595" height="10"> </canvas>
+    <canvas id="secCanvas" width="595" height="12"> </canvas>
       <script>
         var canvas = document.getElementById("secCanvas");
         var ctx = canvas.getContext("2d");
@@ -60,29 +60,29 @@
         const secCheck = [32, 16, 8, 4, 2, 1];
 
         function draw(){
-          ctx.clearRect(0, 0, 600, 10);
+          ctx.clearRect(0, 0, 600, 12);
           sec = new Date().getSeconds();
           for(i = 0; i < 6; i++){
             if(sec >= secCheck[i]){
               ctx.beginPath();
               switch(i){
                 case 0:
-                  ctx.rect(0, 0, 95, 10);
+                  ctx.rect(0, 0, 95, 12);
                   break;
                 case 1:
-                  ctx.rect(100, 0, 95, 10);
+                  ctx.rect(100, 0, 95, 12);
                   break;
                 case 2:
-                  ctx.rect(200, 0, 95, 10);
+                  ctx.rect(200, 0, 95, 12);
                   break;
                 case 3:
-                  ctx.rect(300, 0, 95, 10);
+                  ctx.rect(300, 0, 95, 12);
                   break;
                 case 4:
-                  ctx.rect(400, 0, 95, 10);
+                  ctx.rect(400, 0, 95, 12);
                   break;
                 case 5:
-                  ctx.rect(500, 0, 95, 10);
+                  ctx.rect(500, 0, 95, 12);
                   break;
                 default:
                   break;
