@@ -12,10 +12,10 @@
 - 既定値から以下の部分を設定します。  
 URL: `https://uzuky.github.io/CGST_clock/clock.html`  
 幅: `418`  
-高さ: `238`  
+高さ: `239`  
 ☑表示されていないときにソースをシャットダウン  
 ![](/readme_img/setting.png)  
-※幅と高さはデフォルトのサイズでも構いませんが、418x238だとピッタリになるので、画面内に配置する際に使い勝手が良くなります。  
+※幅と高さはデフォルトのサイズでも構いませんが、418x239だとほぼピッタリになるので、画面内に配置する際に使い勝手が良くなります。  
 ※表示されていないときに～のオプションは、別のシーンに切り替えていて表示していないときなど、メモリなどの使用が節約できて若干恩恵を受けるかもしれません。  
 
 - OBSのプレビューに出てきます。  
@@ -59,7 +59,7 @@ URL: `https://uzuky.github.io/CGST_clock/clock.html`
 ```
 .dateall { font-family: 'ロダンNTLG EB'; }
 ```
-(ただし、レイアウトが崩れる可能性が高いので、おそらく `.dateall{margin:410px;}` 、 `#time{margin: -20px 0 -10px 0;}` の値を調整する必要があると思います。)
+(ただし、レイアウトが崩れる可能性が高いので、おそらく `.dateall{margin:410px;}` 、 `#time{margin: -20px 0 -10px;}` の値を調整する必要があると思います。)
 
 ## ニタラゴについて  
 [ロダンNTLG](https://fontworks.co.jp/fontsearch/RodinNTLGPro-EB/)はニタラゴから派生したフォントで、ニタラゴは現在[ニタラゴルイカ](https://www.type-labo.jp/Hanpunitalago.html)として比較的安く販売されているフォントですが、英数字部分は一致していないので使ってもあまりそれっぽくならないかもしれません。(特に1が決定的に違う)  
@@ -68,10 +68,12 @@ URL: `https://uzuky.github.io/CGST_clock/clock.html`
 ![](/readme_img/nitalagoruika.png)  
 ニタラゴルイカ  
 
-# 使用例  
+# 作者の使用例  
 [https://twitch.tv/uzuky](https://twitch.tv/uzuky) を適当に見て  
 (自分用のはフォントをいじったりしています)  
 
+# お問い合わせ  
+[https://mstdn.maud.io/@uzuky](https://mstdn.maud.io/@uzuky)  
 
 # ライセンス  
 MIT
