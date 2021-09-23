@@ -1,5 +1,7 @@
 # CGST_clock
 デレステUI風時計です。  
+ガシャ画面右下などにあるボタンをかなり参考にしました。  
+![](/readme_img/button.png)  
 秒表示は2進数のバーになっています。  
 [こんな感じの表示です。](https://uzuky.github.io/CGST_clock/clock.html)
 
@@ -47,6 +49,24 @@ URL: `https://uzuky.github.io/CGST_clock/clock.html`
 .star { display: none; }
 ```
 
+## ローカルで使う場合
+[ここ](https://github.com/uzuky/CGST_clock) にある `clock.css` と `clock.html` をダウンロードして同じディレクトリに入れ、OBSの場合はURLを指定する代わりにローカルファイルで `clock.html` を指定して使用してください。  
+ローカルで使うメリットはGitHubが落ちても大丈夫なところです。  
+
+# フォントについて
+今回用いているのはGoogleFontsで公開されている[Roboto](https://fonts.google.com/specimen/Roboto)です。  
+デレステのUIで使われているフォントはロダンNTLGなので、Fontworks LETSを契約していて使える方は以下を入力すると、よりデレステのUIに近づくかもしれません。  
+```
+.dateall { font-family: 'ロダンNTLG EB'; }
+```
+(ただし、レイアウトが崩れる可能性が高いので、おそらく `.dateall{margin:410px;}` 、 `#time{margin: -20px 0 -10px 0;}` の値を調整する必要があると思います。)
+
+## ニタラゴについて  
+[ロダンNTLG](https://fontworks.co.jp/fontsearch/RodinNTLGPro-EB/)はニタラゴから派生したフォントで、ニタラゴは現在[ニタラゴルイカ](https://www.type-labo.jp/Hanpunitalago.html)として比較的安く販売されているフォントですが、英数字部分は一致していないので使ってもあまりそれっぽくならないかもしれません。(特に1が決定的に違う)  
+![](/readme_img/rodinntlgpro.png)  
+ロダンNTLG  
+![](/readme_img/nitalagoruika.png)  
+ニタラゴルイカ  
 
 # 使用例  
 [https://twitch.tv/uzuky](https://twitch.tv/uzuky) を適当に見て  
