@@ -41,6 +41,12 @@ URL: `https://uzuky.github.io/CGST_clock/clock.html`
 最初から入力されている `body～` はそのまま、次の行に追記してください。  
 ![](/readme_img/customcss.png)
 
+## 背景の★を消したい場合(OBSの使い方)  
+- 上記と同様に、以下を追記します。
+```
+.star { display: none; }
+```
+
 
 # 使用例  
 [https://twitch.tv/uzuky](https://twitch.tv/uzuky) を適当に見て  
