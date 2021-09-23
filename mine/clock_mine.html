@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="clock_mine.css" />
+<title>clock</title>
+</head>
+<body>
+
+  <div class="dateall">
+    <div class="background"></div>
+    <div class="pos-star0">
+      <div class="star0">
+          <div class="star"></div>
+      </div>
+    </div>
+    <div class="pos-star1">
+      <div class="star1">
+          <div class="star"></div>
+      </div>
+    </div>
+    <div class="pos-star2">
+      <div class="star2">
+          <div class="star"></div>
+      </div>
+    </div>
+
+    <div id="time">
+      <script>
+        function hhmi(){
+          var date = new Date();
+          var hh = toDoubleDigits(date.getHours());
+          var mi = toDoubleDigits(date.getMinutes());
+          var element = document.getElementById("time");
+          element.innerHTML = hh + ':' + mi;
+        };
+        function toDoubleDigits(num){
+          num += "";
+          if (num.length === 1){
+            num = "0" + num;
+          }
+          return num;
+        };
+        setInterval(hhmi, 200);
+      </script>
+    </div>
+
+    <div id="sec">
+    <canvas id="secCanvas" width="595" height="10"> </canvas>
+      <script>
+        var canvas = document.getElementById("secCanvas");
+        var ctx = canvas.getContext("2d");
+        var i = 0;
+        var sec;
+        const secCheck = [32, 16, 8, 4, 2, 1];
+
+        function draw(){
+          ctx.clearRect(0, 0, 600, 10);
+          sec = new Date().getSeconds();
+          for(i = 0; i < 6; i++){
+            if(sec >= secCheck[i]){
+              ctx.beginPath();
+              switch(i){
+                case 0:
+                  ctx.rect(0, 0, 95, 10);
+                  break;
+                case 1:
+                  ctx.rect(100, 0, 95, 10);
+                  break;
+                case 2:
+                  ctx.rect(200, 0, 95, 10);
+                  break;
+                case 3:
+                  ctx.rect(300, 0, 95, 10);
+                  break;
+                case 4:
+                  ctx.rect(400, 0, 95, 10);
+                  break;
+                case 5:
+                  ctx.rect(500, 0, 95, 10);
+                  break;
+                default:
+                  break;
+              }
+            ctx.fillStyle = "#2d2d2d";
+            ctx.fill();
+            ctx.closePath();
+            sec -= secCheck[i];
+            } 
+          }
+        }
+        setInterval('draw()', 200);
+      </script>
+    </div>
+
+    <div class="datenday">
+      <p id='day'>
+        <script>
+          function ddd(){
+            const day_of_week_list = ['Sun.', 'Mon.', 'Tue.', 'Wed.', 'Thur.', 'Fri.', 'Sat.'];
+            // https://dictionary.cambridge.org/ja/dictionary/english/thursday
+            
+            var date = new Date();
+            var ddd = day_of_week_list[date.getDay()];
+            var element = document.getElementById("day");
+            switch(date.getDay()){
+              case 0:
+                element.style.color = '#EC44C4';
+                break;
+              case 6:
+                element.style.color = '#1B86F8';
+                break;
+              default:
+                element.style.color = '#FE9138';
+                break;
+            }
+            element.innerHTML = ddd;
+          };
+          setInterval(ddd, 1000);
+        </script>
+      </p>
+      <p id='date'>
+        <script>
+          function mmdd(){
+            const month_english_list = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'Jul', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'];
+            // https://dictionary.cambridge.org/ja/grammar/british-grammar/dates
+            
+            var date = new Date();
+            var mm = month_english_list[date.getMonth()];
+            var dd = toDoubleDigits(date.getDate());
+            var element = document.getElementById("date");
+            element.innerHTML = dd + '-' + mm;
+          };
+          function toDoubleDigits(num){
+            num += "";
+            if (num.length === 1){
+              num = "0" + num;
+            }
+          return num;
+          };
+          setInterval(mmdd, 1000);
+        </script>
+      </p>
+    </div>
+  </div>
+
+</body>
+</html>
