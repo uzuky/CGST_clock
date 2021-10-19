@@ -4,7 +4,8 @@ OBSなどの配信ソフトに取り込んで、現在時刻を配信画面に�
 ガシャ画面右下などにあるボタンをかなり参考に、画像を使わず作成しました。  
 ![](/readme_img/button.png)  
 秒表示は2進数のバーになっています。  
-[こんな感じの表示です。](https://uzuky.github.io/CGST_clock/clock.html)
+こんな感じの表示です (クリックで動いてるページが開きます) 。
+[![](/readme_img/clock.png)](https://uzuky.github.io/CGST_clock/clock.html)
 
 ## OBSでの使い方  
 - ソース追加で『ブラウザ』を選びます。  
@@ -60,14 +61,15 @@ URL: `https://uzuky.github.io/CGST_clock/clock.html`
 ```
 .dateall { font-family: 'ロダンNTLG EB'; }
 ```
-(ただし、レイアウトが崩れる可能性が高いので、おそらく `.dateall{margin:410px;}` 、 `#time{margin: -20px 0 -10px;}` の値を調整する必要があると思います。)
+(ただし、レイアウトが崩れる可能性が高いので、おそらく `.dateall{margin:410px;}` 、 `#time{margin: -20px 0 -10px;}` の値を調整する必要があると思います。あと、フォントを持っていないため **'ロダンNTLG EB'が正しい指定名なのか不明** なので気をつけて下さい。)
 
 ## ニタラゴについて  
-[ロダンNTLG](https://fontworks.co.jp/fontsearch/RodinNTLGPro-EB/)はニタラゴから派生したフォントで、ニタラゴは現在[ニタラゴルイカ](https://www.type-labo.jp/Hanpunitalago.html)として比較的安く販売されているフォントですが、英数字部分は一致していないので使ってもあまりそれっぽくならないかもしれません。(特に1が決定的に違う)  
+実は[ロダンNTLG](https://fontworks.co.jp/fontsearch/RodinNTLGPro-EB/)はニタラゴから派生したフォントという歴史があります。  
+そしてニタラゴは現在[ニタラゴルイカ](https://www.type-labo.jp/Hanpunitalago.html)として比較的安く販売されており、デレステフォント界隈では有名なフォントですが、 **英数字部分に関しては一致していない** ので使ってもあまりそれっぽくならないかもしれません。(特に1が決定的に違う)  
 ![](/readme_img/rodinntlgpro.png)  
-ロダンNTLG  
+↑ロダンNTLG  
 ![](/readme_img/nitalagoruika.png)  
-ニタラゴルイカ  
+↑ニタラゴルイカ  
 
 # 作者の使用例  
 [https://twitch.tv/uzuky](https://twitch.tv/uzuky) を適当に見て  
