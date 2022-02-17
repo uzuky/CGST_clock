@@ -66,11 +66,11 @@ URL: `https://uzuky.github.io/CGST_clock/clock.html`
 
 ## ニタラゴについて  
 実は[ロダンNTLG](https://fontworks.co.jp/fontsearch/RodinNTLGPro-EB/)はニタラゴから派生したフォントという歴史があります。  
-そしてニタラゴは現在[ニタラゴルイカ](https://www.type-labo.jp/Hanpunitalago.html)として比較的安く販売されており、デレステフォント界隈では有名なフォントですが、 **英数字部分に関しては一致していない** ので使ってもあまりそれっぽくならないかもしれません。(特に1が決定的に違う)  
+そしてニタラゴは現在[ニタラゴルイカ](https://www.type-labo.jp/Hanpunitalago.html)として比較的安く販売されており、デレステフォント界隈では有名なフォントですが、 **英数字部分に関しては一致していない** ので使ってもあまりそれっぽくならないかもしれません。(全体的に重心の高さが異なっている他、特に1が決定的に違う)  
 ![](/readme_img/rodinntlgpro.png)  
-↑ロダンNTLG  
+↑ ロダンNTLG  
 ![](/readme_img/nitalagoruika.png)  
-↑ニタラゴルイカ  
+↑ ニタラゴルイカ  
 
 # 作者の使用例  
 [https://twitch.tv/uzuky](https://twitch.tv/uzuky) を適当に見て  
