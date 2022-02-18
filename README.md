@@ -64,11 +64,21 @@ URL: `https://uzuky.github.io/CGST_clock/clock.html`
 
 # フォントについて
 今回用いているのはGoogleFontsで公開されている[Roboto](https://fonts.google.com/specimen/Roboto)です。  
-デレステのUIで使われているフォントはロダンNTLGなので、Fontworks LETSを契約していて使える方は以下を入力すると、よりデレステのUIに近づくかもしれません。  
+デレステのUIで使われているフォントはロダンNTLGなので、『Fontworks LETS』を契約していてロダンNTLGをアクティベートしている方は以下を設定すると、よりデレステのUIに近づくかもしれません。  
+OBSの場合、この時計のソースのプロパティを開き、以下を設定する  
+幅: `458`  
+高さ: `238`   
+『カスタムCSS』に以下を追記
 ```
-.dateall { font-family: 'FTT-RodinNTLG EB'; }
+.dateall {
+    font-family: 'FOT-ロダンNTLG Pro EB', FTT-RodinNTLG EB;
+    width: 450px;
+}
+#time {
+    margin: auto;
+}
 ```
-(ただし、レイアウトが崩れる可能性が高いので、おそらく `.dateall{margin:410px;}` 、 `#time{margin: -20px 0 -10px;}` の値を調整する必要があると思います。)
+
 
 ## ニタラゴについて  
 実は[ロダンNTLG](https://fontworks.co.jp/fontsearch/RodinNTLGPro-EB/)はニタラゴから派生したフォントという歴史があります。  
