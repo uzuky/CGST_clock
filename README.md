@@ -66,9 +66,9 @@ URL: `https://uzuky.github.io/CGST_clock/clock.html`
 今回用いているのはGoogleFontsで公開されている[Roboto](https://fonts.google.com/specimen/Roboto)です。  
 デレステのUIで使われているフォントはロダンNTLGなので、Fontworks LETSを契約していて使える方は以下を入力すると、よりデレステのUIに近づくかもしれません。  
 ```
-.dateall { font-family: 'ロダンNTLG EB'; }
+.dateall { font-family: 'FTT-RodinNTLG EB'; }
 ```
-(ただし、レイアウトが崩れる可能性が高いので、おそらく `.dateall{margin:410px;}` 、 `#time{margin: -20px 0 -10px;}` の値を調整する必要があると思います。あと、フォントを持っていないため **'ロダンNTLG EB'が正しい指定名なのか不明** なので気をつけて下さい。)
+(ただし、レイアウトが崩れる可能性が高いので、おそらく `.dateall{margin:410px;}` 、 `#time{margin: -20px 0 -10px;}` の値を調整する必要があると思います。)
 
 ## ニタラゴについて  
 実は[ロダンNTLG](https://fontworks.co.jp/fontsearch/RodinNTLGPro-EB/)はニタラゴから派生したフォントという歴史があります。  
