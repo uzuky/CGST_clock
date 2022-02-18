@@ -36,7 +36,7 @@ URL: `https://uzuky.github.io/CGST_clock/clock.html`
 - 上記で追加したソースのプロパティを開き、『カスタムCSS』に以下を追記します。  
 ```
 #sec { display: none; }
-#time { margin-bottom: -20px; }
+#time { margin-bottom: -20px; } /* -20の数字を変えると時刻の下側の余白の高さが変わります */
 ```
 - OKを押すと秒のバーが消えます。  
 日付、曜日、秒を消すとこんな感じです。  
@@ -63,30 +63,37 @@ URL: `https://uzuky.github.io/CGST_clock/clock.html`
 ローカルで使うメリットはGitHubが落ちても大丈夫なところです。  
 
 # フォントについて
-今回用いているのはGoogleFontsで公開されている[Roboto](https://fonts.google.com/specimen/Roboto)です。  
-デレステのUIで使われているフォントはロダンNTLGなので、『Fontworks LETS』を契約していてロダンNTLGをアクティベートしている方は以下を設定すると、よりデレステのUIに近づくかもしれません。  
-OBSの場合、この時計のソースのプロパティを開き、以下を設定する  
-幅: `458`  
-高さ: `238`   
+今回用いているのは『GoogleFonts』で公開されている『[Roboto](https://fonts.google.com/specimen/Roboto)』です。  
+一方、デレステのUIで使われているフォントは『[ロダンNTLG Pro](https://lets.fontworks.co.jp/fonts/236)』です。  
+
+
+## 『Fontworks LETS』を契約していて『ロダンNTLG Pro』が使える場合  
+(OBSの設定例) ソース一覧からこの時計のプロパティを開き、以下を設定すると、かなりデレステに近づきます。  
+幅: `548`  
+高さ: `265`   
 『カスタムCSS』に以下を追記
 ```
 .dateall {
-    font-family: 'FOT-ロダンNTLG Pro EB', FTT-RodinNTLG EB;
-    width: 450px;
+    font-family: 'FOT-ロダンNTLG Pro';
+    font-weight: 600;
+    width: 540px;
 }
 #time {
-    margin: auto;
+    margin: -70px 0 -60px;
+}
+.datenday {
+    margin: -15px 0 -20px;
 }
 ```
 
 
-## ニタラゴについて  
-実は[ロダンNTLG](https://fontworks.co.jp/fontsearch/RodinNTLGPro-EB/)はニタラゴから派生したフォントという歴史があります。  
-そしてニタラゴは現在[ニタラゴルイカ](https://www.type-labo.jp/Hanpunitalago.html)として比較的安く販売されており、デレステフォント界隈では有名なフォントですが、 **英数字部分に関しては一致していない** ので使ってもあまりそれっぽくならないかもしれません。(全体的に重心の高さが異なっている他、特に1が決定的に違う)  
+## 『ニタラゴ』について  
+実は『[ロダンNTLG](https://fontworks.co.jp/fontsearch/RodinNTLGPro-EB/)』は『ニタラゴ』から派生したフォントという歴史があります。  
+そして『ニタラゴ』は現在『[ニタラゴルイカ](https://www.type-labo.jp/Hanpunitalago.html)』として比較的安く販売されており、デレステフォント界隈では有名なフォントですが、 **英数字部分に関しては一致していない** ので、英数字しか使わない時計に適用してもデレステとは100%違うフォントになるため、おすすめはしません。(全体的に重心の高さが異なっている他、特に1が決定的に違う)  
 ![](/readme_img/rodinntlgpro.png)  
-↑ ロダンNTLG  
+↑ 『ロダンNTLG』  
 ![](/readme_img/nitalagoruika.png)  
-↑ ニタラゴルイカ  
+↑ 『ニタラゴルイカ』  
 
 # 作者の使用例  
 [https://twitch.tv/uzuky](https://twitch.tv/uzuky) を適当に見て  
