@@ -89,7 +89,8 @@ URL: `https://uzuky.github.io/CGST_clock/clock.html`
 
 ## 『ニタラゴ』について  
 実は『[ロダンNTLG](https://fontworks.co.jp/fontsearch/RodinNTLGPro-EB/)』は『ニタラゴ』から派生したフォントという歴史があります。  
-そして『ニタラゴ』は現在『[ニタラゴルイカ](https://www.type-labo.jp/Hanpunitalago.html)』として比較的安く販売されており、デレステフォント界隈では有名なフォントですが、 **英数字部分に関しては一致していない** ので、英数字しか使わない時計に適用してもデレステとは100%違うフォントになるため、おすすめはしません。(全体的に重心の高さが異なっている他、特に1が決定的に違う)  
+そして『ニタラゴ』は現在『[ニタラゴルイカ](https://www.type-labo.jp/Hanpunitalago.html)』として比較的安く販売されており、デレステフォント界隈では有名なフォントですが、 **英数字部分に関しては『ロダンNTLG』と一致していません**。  
+そのため、 **英数字しか使わない時計に『ニタラゴルイカ』を適用してもデレステとは100%違うフォントになります**。(全体的に重心の高さが異なっている他、特に1が決定的に違う)  
 ![](/readme_img/rodinntlgpro.png)  
 ↑ 『ロダンNTLG』  
 ![](/readme_img/nitalagoruika.png)  
