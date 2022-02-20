@@ -52,7 +52,7 @@ URL: `https://uzuky.github.io/CGST_clock/clock.html`
 .star { display: none; }
 ```
 
-## 背景の色をもっとのっぺりさせたい場合(OBSの使い方)  
+## 背景のボタンっぽいグラデーションをなくして1色にしたい場合(OBSの使い方)  
 - 上記と同様に、以下を追記します。
 ```
 .background { background: #FEFEFE; }
