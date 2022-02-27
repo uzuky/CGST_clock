@@ -6,7 +6,7 @@ OBSなどの配信ソフトに取り込んで、現在時刻を配信画面に�
 こんな感じの表示です (クリックで実際に動いてるページが開きます (逆に、動いてる時計をクリックするとここのページが開きます)) 。  
 [![](/readme_img/clock.png)](https://uzuky.github.io/CGST_clock/clock.html)  
 秒表示は2進数のバーになっています。  
-<br>
+<br>  
 ## OBSでの使い方  
 - ソース追加で『ブラウザ』を選びます。  
 ![](/readme_img/source.png)  
@@ -23,7 +23,7 @@ URL: `https://uzuky.github.io/CGST_clock/clock.html`
 
 - OBSのプレビューに出てきます。  
 ![](/readme_img/preview.png)  
-<br>
+<br>  
 ## 日付、曜日、秒や背景のいろいろを消したい場合(OBSの使い方)  
 - 上記で追加したソースのプロパティを開き、『カスタムCSS』に以下を **追記** します。  
   
@@ -51,7 +51,7 @@ URL: `https://uzuky.github.io/CGST_clock/clock.html`
 全部追記した場合の『カスタムCSS』欄はこんな感じです。  
 **最初から入力されている `body～` はそのままで**、次の行以降に追記してください。  
 ![](/readme_img/customcss.png)
-<br>
+<br>  
 ## ローカルで使う場合
 [ここ](https://github.com/uzuky/CGST_clock/releases/) にある `deresute_clock.zip` を適当な場所に保存し、右クリックで展開(解凍)します。  
 中に `clock.html`、`clock.css`、`readme_vx.x.txt` の3つファイルが入っているので、OBSの場合はURLを指定する代わりに「☑ローカルファイル」で `clock.html` を指定して使用してください。  
@@ -60,11 +60,11 @@ URL: `https://uzuky.github.io/CGST_clock/clock.html`
 たとえば、**秒の棒の色や曜日の色は clock.html 内に直打ちされた JS で指定されているため、色を変えるにはダウンロードしてファイルを編集する必要があります**。  
 秒の棒の色は90行目、曜日の色は112行目から118行目のところです。  
 <br>
-<br>
+<br>  
 # フォントについて
 今回用いているのは『GoogleFonts』で公開されている『[Roboto](https://fonts.google.com/specimen/Roboto)』です。  
 一方、デレステのUIで使われているフォントは『[ロダンNTLG Pro](https://lets.fontworks.co.jp/fonts/236)』です。  
-<br>
+<br>  
 ## 『Fontworks LETS』を契約していて『ロダンNTLG Pro』が使える場合  
 (OBSの設定例) ソース一覧からこの時計のプロパティを開き、以下を設定すると、かなりデレステに近づきます。  
 幅: `548`  
@@ -85,7 +85,7 @@ URL: `https://uzuky.github.io/CGST_clock/clock.html`
 }
 ```
   
-<br>
+<br>  
 ## 『ニタラゴ』について  
 実は『[ロダンNTLG](https://fontworks.co.jp/fontsearch/RodinNTLGPro-EB/)』は『ニタラゴ』から派生したフォントという歴史があります。  
 そして『ニタラゴ』は現在『[ニタラゴルイカ](https://www.type-labo.jp/Hanpunitalago.html)』として比較的安く販売されており、デレステフォント界隈では有名なフォントですが、 **英数字部分に関しては『ロダンNTLG』と一致していません**。  
@@ -95,15 +95,15 @@ URL: `https://uzuky.github.io/CGST_clock/clock.html`
 ![](/readme_img/nitalagoruika.png)  
 ↑ 『ニタラゴルイカ』  
 <br>
-<br>
+<br>  
 # 作者の使用例  
 [https://twitch.tv/uzuky](https://twitch.tv/uzuky) を適当に見て  
 (自分用のはフォントをいじったりしています)  
 <br>
-<br>
+<br>  
 # お問い合わせ  
 [https://mstdn.maud.io/@uzuky](https://mstdn.maud.io/@uzuky)  
 <br>
-<br>
+<br>  
 # ライセンス  
 MIT
