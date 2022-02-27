@@ -72,7 +72,7 @@ URL: `https://uzuky.github.io/CGST_clock/clock.html`
 『カスタムCSS』に以下を追記  
   
 ```
-.dateall {
+#dateall {
     font-family: 'FOT-ロダンNTLG Pro';
     font-weight: 600;
     width: 540px;
@@ -80,7 +80,7 @@ URL: `https://uzuky.github.io/CGST_clock/clock.html`
 #time {
     margin: -70px 0 -60px;
 }
-.datenday {
+#datenday {
     margin: -15px 0 -20px;
 }
 ```
