@@ -26,7 +26,7 @@ URL: `https://uzuky.github.io/CGST_clock/clock.html`
   
 ## 日付、曜日、秒や背景のいろいろを消したい場合(OBSの使い方)  
 - 上記で追加したソースのプロパティを開き、『カスタムCSS』に以下を **追記** します。  
-
+  
 ```
 /* 日付、曜日が消えます */
 #datenday { display: none; }
@@ -41,7 +41,7 @@ URL: `https://uzuky.github.io/CGST_clock/clock.html`
 /* 背景のボタンっぽい光沢が消えます */
 #gloss { background: #FEFEFE; }
 ```
-
+  
 日付、曜日の列を消すとこんな感じです。  
 ![](/readme_img/clock_nodate.png)  
   
@@ -69,7 +69,7 @@ URL: `https://uzuky.github.io/CGST_clock/clock.html`
 幅: `548`  
 高さ: `265`   
 『カスタムCSS』に以下を追記  
-
+  
 ```
 .dateall {
     font-family: 'FOT-ロダンNTLG Pro';
@@ -83,7 +83,7 @@ URL: `https://uzuky.github.io/CGST_clock/clock.html`
     margin: -15px 0 -20px;
 }
 ```
-
+  
 
 ## 『ニタラゴ』について  
 実は『[ロダンNTLG](https://fontworks.co.jp/fontsearch/RodinNTLGPro-EB/)』は『ニタラゴ』から派生したフォントという歴史があります。  
