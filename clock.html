@@ -87,7 +87,7 @@
                 default:
                   break;
               }
-            ctx.fillStyle = "#2d2d2d";
+            ctx.fillStyle = "#2d2d2d"; //秒の棒の色 (default:#2d2d2d)
             ctx.fill();
             ctx.closePath();
             sec -= secCheck[i];
@@ -109,13 +109,13 @@
             var element = document.getElementById("day");
             switch(date.getDay()){
               case 0:
-                element.style.color = '#EC44C4';
+                element.style.color = '#EC44C4'; //日曜日の色 (default:#EC44C4)
                 break;
               case 6:
-                element.style.color = '#1B86F8';
+                element.style.color = '#1B86F8'; //土曜日の色 (default:#1B86F8)
                 break;
               default:
-                element.style.color = '#FE9138';
+                element.style.color = '#FE9138'; //月から金曜日の色 (default:#FE9138)
                 break;
             }
             element.innerHTML = ddd;
