@@ -1,7 +1,6 @@
 /* じぶんよう */
 @charset "utf-8";
 
-
 #secCanvas {
     display: block;
     margin: 0px auto;
@@ -18,18 +17,18 @@
     text-align: center;
     font-weight: 600;
     border-style: solid;
+    border-width:  6px 6px 6px;
     border-color: #000;
-    border-width:  6px 6px 18px;
+    box-shadow: 0 12px #000;
     border-radius: 30px 30px 30px 30px;
-    background: white;
+    background: #fff;
 
     font-family: 'FOT-ロダンNTLG Pro';
     color: #2d2d2d;
 }
 
 #gloss {
-    background: #fefefe;
-    /* background: linear-gradient(0deg, #fff9, #cccd 5%, #fff8 50%); */
+    /* background: linear-gradient(0deg, #fff9, #cccd 8%, #fff8 50%); */
     /* background: aqua; */
     width: 100%;
     height: 100%;
