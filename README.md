@@ -3,11 +3,15 @@
 OBSなどの配信ソフトに取り込んで、現在時刻を配信画面にのせる用途を想定しています。  
 ガシャ画面右下などにあるボタンをかなり参考に、画像を使わず作成しました。  
 ![](/readme_img/button.png)   
-こんな感じの表示です (クリックで実際に動いてるページが開きます (逆に、動いてる時計をクリックするとここのページが開きます)) 。  
-[![](/readme_img/clock.png)](https://uzuky.github.io/CGST_clock/clock.html)  
-秒表示は2進数のバーになっています。  
 
-## OBSでの使い方(URLを参照する方法)  
+## 見てみる
+[![](/readme_img/clock.png)](https://uzuky.github.io/CGST_clock/clock.html)  
+クリックすると実際に動いてるページが開くので、URLをOBSのブラウザソースに追加してください。  
+逆に、動いてる時計をクリックするとここのページが開きます。  
+秒表示は2進数のバーになっています。  
+カスタマイズなどの詳細な使い方は下を読んでください。  
+
+# ①: OBSでの使い方(URLを参照する方法)  
 URLを参照するのでダウンロードするものはありません。  
 - ソース追加で『ブラウザ』を選びます。  
 ![](/readme_img/source.png)  
@@ -27,7 +31,8 @@ URL: `https://uzuky.github.io/CGST_clock/clock.html`
 ![](/readme_img/preview.png)  
   
 ## 日付、曜日、秒や背景のいろいろを消したい場合(OBSの使い方)  
-- 上記で追加したソースのプロパティを開き、『カスタムCSS』に以下を **追記** します。  
+- 上記で追加したソースのプロパティを開き、『カスタムCSS』に以下を **追記** します。
+- **最初から入力されている `body～` はそのままで**、次の行以降に追記してください。  
   
 ```CSS
 /* 日付、曜日が消えます */
@@ -51,17 +56,18 @@ URL: `https://uzuky.github.io/CGST_clock/clock.html`
 ![](/readme_img/clock_nodatesec.png)  
 
 全部追記した場合の『カスタムCSS』欄はこんな感じです。  
-**最初から入力されている `body～` はそのままで**、次の行以降に追記してください。  
 ![](/readme_img/customcss.png)
   
-## ファイルをダウンロードしてローカルで使う場合
-[ここ](https://github.com/uzuky/CGST_clock/releases/) にある `deresute_clock.zip` を適当な場所に保存し、右クリックで展開(解凍)します。  
-中に `clock.html`、`clock.css`、`readme_vx.x.txt` の3つファイルが入っているので、OBSの場合はURLを指定する代わりに「☑ローカルファイル」で `clock.html` を指定して使用してください。  
+# ②: ファイルをダウンロードしてローカルで使う場合
+[ここ](https://github.com/uzuky/CGST_clock/releases/) にある `deresute_clock.zip` をいい感じの場所に保存し、右クリックで展開(解凍)します。  
+中に `clock.html`、`clock.css`、`readme_vx.x.txt` の3つファイルが入っています。  
+OBSの場合はURLを指定する代わりに「☑ローカルファイル」にチェックを入れて `clock.html` を指定して使用してください。  
 　  
 ローカルで使う **メリットはGitHubが落ちても大丈夫** なところと、 **もっと柔軟にレイアウトをいじれる** ところです。  
 たとえば、**秒の棒の色や曜日の色は clock.html 内に直打ちされた JS で指定されているため、色を変えるにはダウンロードしてファイルを編集する必要があります**。  
-秒の棒の色は90行目、曜日の色は112行目から118行目のところです。  
-Webフォントを使いたい場合もダウンロードして`clock.css`の8行目のURLを変更してください。  
+秒の棒の色は90行目、曜日の色は112行目から118行目のところです。(CSSでいい感じに変更できる方法知ってる人がいたらプルリクして)  
+<br>
+Webフォントを変更したい場合は`clock.css`の8行目のURLを変更してください。  
 <br>
   
 # フォントについて
@@ -118,6 +124,7 @@ Webフォントを使いたい場合は `font-family` では指定せず、ロ�
 <br>
   
 # お問い合わせ
+[https://x.com/uzukirin](https://x.com/uzukirin)  
 [https://mstdn.maud.io/@uzuky](https://mstdn.maud.io/@uzuky)  
 <br>
   
